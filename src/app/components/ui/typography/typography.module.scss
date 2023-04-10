@@ -1,0 +1,121 @@
+@import '../../../styles/mixins.scss';
+
+.h1 {
+  font-size: 52px;
+  line-height: 64px;
+  @include mqM() {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.h2 {
+  font-size: 44px;
+  line-height: 54px;
+  @include mqM() {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+.h3 {
+  font-size: 32px;
+  line-height: 40px;
+  @include mqM() {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.h4 {
+  font-size: 24px;
+  line-height: 32px;
+  @include mqM() {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.h5 {
+  font-size: 18px;
+  line-height: 28px;
+  @include mqM() {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.span {
+  font-size: 16px;
+  line-height: 24px;
+}
+.p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.subtitle-l {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  @include mqM() {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.subtitle-s {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  @include mqM() {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.body-l {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  @include mqM() {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+.body-s {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  @include mqM() {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.info-l {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  @include mqM() {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.info-s {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  @include mqM() {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.button-l {
+  font-size: 16px;
+  line-height: 150%;
+  @include mqM() {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.button-s {
+  font-size: 14px;
+  line-height: 18px;
+  @include mqM() {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

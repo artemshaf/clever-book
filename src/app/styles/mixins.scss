@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+@mixin mqXs {
+  @media (max-width: $mq-s) {
+    @content;
+  }
+}
+
+@mixin mqS {
+  @media (max-width: $mq-s) {
+    @content;
+  }
+}
+
+@mixin mqM {
+  @media (max-width: $mq-m) {
+    @content;
+  }
+}
+@mixin mqL {
+  @media (max-width: $mq-l) {
+    @content;
+  }
+}
+@mixin mqXl {
+  @media (max-width: $mq-xl) {
+    @content;
+  }
+}

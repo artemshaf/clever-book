@@ -1,0 +1,62 @@
+@import '../../../styles/mixins.scss';
+
+.modal {
+  max-width: 530px;
+  padding: 56px 48px;
+  pointer-events: all;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: white;
+  border-radius: $border-m;
+
+  @include mqM() {
+    padding: 24px 16px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding: 40px;
+
+  @include mqM() {
+    padding: 15px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: $color-grey5;
+
+  @include mqM() {
+    top: 12px;
+    right: 12px;
+
+    padding: 6px;
+
+    width: 32px;
+    height: 32px;
+  }
+
+  & svg,
+  & path {
+    fill: $btn-color-pressed;
+    stroke: none;
+
+    &:hover {
+      fill: $color-white;
+    }
+  }
+
+  &:hover {
+    & svg,
+    & path {
+      fill: $color-white;
+    }
+  }
+}

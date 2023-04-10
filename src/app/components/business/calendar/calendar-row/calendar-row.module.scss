@@ -1,0 +1,68 @@
+@import '../../../../styles/mixins.scss';
+
+.item {
+  transition: $transition-m all;
+}
+
+.btn {
+  color: $color-dark;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.available {
+  color: rgb(54, 54, 54);
+  background-color: transparent;
+  transition: $transition-m all;
+  cursor: cell;
+
+  &:hover {
+    transform: scale(1.02);
+    background-color: rgba(249, 105, 14, 0.4);
+    color: $color-white;
+  }
+  &:active {
+    font-weight: bold;
+    color: $color-white;
+    background-color: $btn-color-pressed;
+  }
+}
+.other-month {
+  color: $color-grey40;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.booked {
+  color: $color-grey20;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.weekend {
+  color: $color-grey40;
+  background-color: $bg-negative;
+  cursor: not-allowed;
+}
+.current {
+  color: rgb(248, 54, 0);
+  cursor: cell;
+}
+
+.active {
+  cursor: pointer;
+  color: $color-white;
+  background: $bg-btn-hover;
+}
+
+.not-allowed {
+  color: $color-grey40;
+  background-color: transparent;
+  background-image: transparent;
+  cursor: not-allowed;
+}

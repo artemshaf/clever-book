@@ -1,0 +1,79 @@
+@import '../../../styles/mixins.scss';
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+
+  &__input {
+    max-width: 100%;
+    width: 100%;
+    margin-right: auto;
+    &__wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 32px;
+
+      & label {
+        padding: 12px 16px;
+      }
+
+      & input {
+        caret-color: rgb(248, 54, 0);
+      }
+    }
+
+    &_focused {
+      width: 100%;
+
+      & input {
+        margin-right: auto;
+      }
+
+      & svg,
+      & path {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  &__btns {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 16px;
+
+    & * {
+      fill: $color-white;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    column-gap: 8px;
+    margin-right: auto;
+    padding: 12px;
+    color: $color-grey40;
+    text-transform: none;
+    font-weight: 400;
+    border-radius: 150px;
+
+    & * {
+      fill: $color-white;
+    }
+
+    & svg {
+      height: auto;
+      padding: 2px;
+      stroke: $color-grey40;
+      stroke-width: 1px;
+    }
+
+    @include mqM() {
+      padding: 12px;
+    }
+  }
+}

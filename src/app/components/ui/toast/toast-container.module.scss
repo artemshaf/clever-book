@@ -1,0 +1,53 @@
+.container {
+  overflow: hidden;
+  overflow-x: auto;
+  display: grid;
+  grid-gap: 20px;
+  position: relative;
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  max-width: 1180px;
+  width: 100%;
+  z-index: 10;
+}
+
+.top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.top-center {
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-center {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}

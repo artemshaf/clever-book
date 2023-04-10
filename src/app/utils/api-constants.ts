@@ -1,0 +1,17 @@
+export enum ApiUrls {
+  Base = 'https://strapi.cleverland.by',
+  Books = 'api/books',
+  BookById = 'api/books/',
+  Categories = 'api/categories',
+  Registration = 'api/auth/local/register',
+  Login = 'api/auth/local',
+  RecoveryPassword = 'api/auth/forgot-password',
+  ResetPassword = 'api/auth/reset-password',
+  AddComment = '/api/comments',
+  UpdateCommentById = '/api/comments/',
+  CommentUpdateById = '/api/comments/',
+  BookingById = '/api/bookings',
+  Profile = 'api/users/me',
+  ProfileUpdateById = '/api/users/',
+  ProfileAvatar = '/api/upload',
+}

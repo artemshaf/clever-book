@@ -1,0 +1,17 @@
+@import '../../../styles/mixins.scss';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 230px auto;
+  gap: 30px;
+
+  @include mqL() {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu {
+  @include mqL() {
+    display: none;
+  }
+}

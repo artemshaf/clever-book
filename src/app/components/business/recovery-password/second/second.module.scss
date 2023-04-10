@@ -1,0 +1,48 @@
+@import '../../../../styles/variables.scss';
+
+.form {
+}
+
+.info {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-grey40;
+}
+
+.check-icon {
+  width: 100%;
+  max-height: 24px;
+
+  & path {
+    stroke: $color-positive;
+    width: 24px;
+    stroke-width: 1.5px;
+  }
+
+  & svg {
+    width: 24px;
+  }
+}
+
+.assestive {
+  margin: 8px 12px 0 12px;
+  line-height: 16px;
+  font-size: 12px;
+
+  & * {
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  &_error {
+    color: $color-negative;
+  }
+
+  color: $color-grey40;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 100%;
+}

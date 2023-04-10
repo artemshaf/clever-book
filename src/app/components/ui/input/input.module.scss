@@ -1,0 +1,92 @@
+@import '../../../styles/mixins.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+  background-color: $color-white;
+  border-radius: 600px;
+  padding: 10px 16px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+
+  transition: $transition-m all ease-in-out;
+
+  * svg {
+    cursor: pointer;
+    transition: $transition-m all ease-in-out;
+  }
+
+  & input {
+    height: 100%;
+    max-width: 350px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    transition: $transition-m all ease-in-out;
+
+    &::placeholder {
+      color: $color-grey40;
+    }
+    &:focus {
+      color: $btn-color-pressed;
+    }
+  }
+}
+
+.icons {
+  background: transparent !important;
+
+  & svg,
+  & path {
+    fill: $color-grey40;
+  }
+
+  & button {
+    background: none;
+  }
+
+  &_fill {
+    & svg,
+    & path {
+      fill: $color-accent;
+    }
+  }
+}
+
+.input_focused {
+  width: 100%;
+  max-width: 100%;
+}
+
+.search {
+  background: transparent !important;
+
+  &:hover {
+    & svg,
+    & path {
+      fill: $color-accent;
+    }
+  }
+
+  & svg,
+  & path {
+    fill: $color-grey40;
+  }
+
+  &_l {
+    padding: 0;
+  }
+  &__active {
+    & svg,
+    & path {
+      fill: $color-accent;
+    }
+  }
+}
+
+.close {
+  padding: 0;
+}

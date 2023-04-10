@@ -1,0 +1,46 @@
+@import '../../../styles/mixins.scss';
+
+.nestedList {
+  ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 16px;
+    font-weight: normal;
+
+    word-wrap: wrap;
+
+    &:before {
+      content: counters(item, '.') '. ';
+      padding-right: 10px;
+      margin-bottom: 16px;
+      @include mqS() {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  li ol > li {
+    margin: 16px 0 16px 30px;
+
+    @include mqS() {
+      margin: 8px 0 8px 15px;
+    }
+
+    &:before {
+      content: counters(item, '.') ' ';
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  & > ol > li {
+    font-weight: bold;
+  }
+}

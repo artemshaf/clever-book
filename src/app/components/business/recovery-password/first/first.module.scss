@@ -1,0 +1,66 @@
+@import '../../../../styles/variables.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.record {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    margin-top: 16px;
+    color: $color-grey40;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    &__link {
+      color: $color-dark;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+
+      & svg {
+        margin-left: 10px;
+        transition: $transition-m;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        & svg {
+          transform: translateX(10px) scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.assestive {
+  margin: 8px 12px 0 12px;
+  line-height: 16px;
+  font-size: 12px;
+
+  & * {
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  &_error {
+    color: $color-negative;
+  }
+
+  color: $color-grey40;
+}
+
+.btn {
+  width: 100%;
+}

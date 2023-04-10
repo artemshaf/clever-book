@@ -1,0 +1,97 @@
+{
+  "usesTypeScript": true,
+  "usesCssModule": true,
+  "cssPreprocessor": "scss",
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "customTemplates": {
+        "component": "react-cli-templates/component/TemplateName.tsx",
+        "style": "react-cli-templates/component/TemplateName.module.scss",
+        "interface": "react-cli-templates/component/TemplateName-interface.ts",
+        "index": "react-cli-templates/component/index.tsx"
+      },
+      "path": "src/app/components",
+      "withStyle": true,
+      "withStory": false,
+      "withLazy": false,
+      "withIndex": true,
+      "withInterface": true,
+      "withTest": false
+    },
+    "plain": {
+      "customTemplates": {
+        "component": "react-cli-templates/component/TemplateName.tsx",
+        "style": "react-cli-templates/component/TemplateName.module.scss",
+        "interface": "react-cli-templates/component/TemplateName-interface.ts",
+        "index": "react-cli-templates/component/index.tsx"
+      },
+      "path": "src/app/components/Plain",
+      "withStyle": true,
+      "withStory": false,
+      "withLazy": false,
+      "withIndex": true,
+      "withInterface": true,
+      "withTest": false
+    },
+    "ui": {
+      "customTemplates": {
+        "component": "react-cli-templates/component/TemplateName.tsx",
+        "style": "react-cli-templates/component/TemplateName.module.scss",
+        "interface": "react-cli-templates/component/TemplateName-interface.ts",
+        "index": "react-cli-templates/component/index.tsx"
+      },
+      "path": "src/app/components/UI",
+      "withStyle": true,
+      "withStory": false,
+      "withLazy": false,
+      "withIndex": true,
+      "withInterface": true,
+      "withTest": false
+    },
+    "business": {
+      "customTemplates": {
+        "component": "react-cli-templates/component/TemplateName.tsx",
+        "style": "react-cli-templates/component/TemplateName.module.scss",
+        "interface": "react-cli-templates/component/TemplateName-interface.ts",
+        "index": "react-cli-templates/component/index.tsx"
+      },
+      "path": "src/app/components/Business",
+      "withStyle": true,
+      "withStory": false,
+      "withLazy": false,
+      "withIndex": true,
+      "withInterface": true,
+      "withTest": false
+    },
+    "layout": {
+      "customTemplates": {
+        "component": "react-cli-templates/component/TemplateName.tsx",
+        "style": "react-cli-templates/component/TemplateName.module.scss",
+        "interface": "react-cli-templates/component/TemplateName-interface.ts",
+        "index": "react-cli-templates/component/index.tsx"
+      },
+      "path": "src/app/components/Layout",
+      "withStyle": true,
+      "withStory": false,
+      "withLazy": false,
+      "withIndex": true,
+      "withInterface": true,
+      "withTest": false
+    },
+    "page": {
+      "customTemplates": {
+        "component": "react-cli-templates/page/TemplateName.tsx",
+        "style": "react-cli-templates/page/TemplateName.module.scss",
+        "interface": "react-cli-templates/page/TemplateName-interface.ts",
+        "index": "react-cli-templates/page/index.tsx"
+      },
+      "path": "src/app/pages",
+      "withLazy": false,
+      "withStory": false,
+      "withStyle": true,
+      "withIndex": true,
+      "withInterface": true
+    }
+  }
+}

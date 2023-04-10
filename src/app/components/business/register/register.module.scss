@@ -1,0 +1,89 @@
+@import '../../../styles/mixins.scss';
+
+.register {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 56px;
+  border-radius: $border-m;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  max-width: 530px;
+  width: 100%;
+
+  @include mqS() {
+    padding: 24px 16px;
+  }
+
+  & > form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    & button {
+      margin-top: 16px;
+    }
+  }
+}
+
+.entered__block {
+  margin-top: -16px;
+
+  display: flex;
+  align-items: center;
+
+  &__link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    transition: $transition-m;
+    font-weight: bold;
+    font-size: 12px;
+
+    & svg {
+      margin-left: 10px;
+      transition: $transition-m;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      & svg {
+        transform: translateX(10px) scale(1.1);
+      }
+    }
+  }
+}
+
+.step {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  font-weight: bold;
+  color: $color-white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.form {
+  &-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+
+    @include mqM() {
+      gap: 24px;
+    }
+
+    & > button {
+      width: 100%;
+    }
+  }
+}

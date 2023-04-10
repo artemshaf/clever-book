@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["./src/app/components/index.tsx"],
+      "@pages": ["./src/app/pages/index.tsx"],
+      "@utils": ["./src/app/utils/index.ts"],
+      "@data": ["./src/app/data/index.tsx"],
+      "@helpers": ["./src/app/helpers/index.tsx"],
+      "@store": ["./src/app/store/index.ts"],
+      "@hooks": ["./src/app/hooks/index.tsx"],
+      "@types": ["./src/types/index.ts"],
+      "@api": ["./src/app/api/index.ts"]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import '../../../../../styles/mixins.scss';
+
+.toast {
+  display: grid;
+  align-items: center;
+  column-gap: 20px;
+  border-width: 2px;
+  font-weight: 600;
+  width: 90%;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-dark;
+
+  grid-template-columns: 32px auto 24px;
+  padding: 24px 32px;
+  border-radius: 5px;
+
+  @include mqM() {
+    padding: 16px 24px;
+    grid-template-columns: 24px auto 16px;
+  }
+
+  @include mqS {
+    padding: 12px 16px;
+  }
+}
+
+.error {
+  border: 2px solid $color-negative;
+  background-color: $bg-negative;
+  color: $color-dark;
+
+  & path {
+    stroke: $color-white;
+  }
+
+  & svg {
+    fill: $color-negative;
+  }
+}
+
+.success {
+  border: 2px solid $color-positive;
+  background-color: $bg-positive;
+
+  & svg {
+    fill: $color-positive;
+  }
+}
+
+.close {
+  background: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+  & path {
+    fill: $color-dark;
+    stroke: $color-dark;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/mixins.scss';
+
+.breadcrumbs {
+  display: block;
+  background-color: $color-grey5;
+  padding: 20px 10px;
+
+  &__item {
+    display: inline;
+
+    cursor: pointer;
+    & a {
+      color: var(--dark);
+      font-size: var(--font-lg);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:first-child::before {
+      content: '';
+      margin: 0;
+    }
+
+    &::before {
+      font-size: var(--font-sm);
+      vertical-align: middle;
+      content: '/';
+      margin-left: 12px;
+      margin-right: 12px;
+      text-decoration: none;
+    }
+  }
+}
+
+.last {
+  cursor: not-allowed;
+  user-select: none;
+  color: $color-grey40;
+  &:hover {
+    text-decoration: none;
+  }
+}

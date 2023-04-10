@@ -1,0 +1,62 @@
+@import '../../../../styles/mixins.scss';
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mark {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rating {
+  margin-left: auto;
+  margin-right: auto;
+
+  & svg,
+  & path {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+.area {
+  min-height: 130px;
+  width: 100%;
+  padding: 19px 12px;
+  color: $color-dark;
+  background-color: $color-grey5;
+  font-size: 16px;
+
+  line-height: 18px;
+  outline: none;
+  border: none;
+  resize: none;
+
+  &::placeholder {
+    color: $color-grey40;
+  }
+}
+
+.btn {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

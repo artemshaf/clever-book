@@ -1,0 +1,22 @@
+@import '../../../styles/mixins.scss';
+
+.container {
+  max-width: calc($container-max-w + 40px * 2);
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+
+  @include mqM() {
+    max-width: calc($container-max-w + 64px);
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include mqS() {
+    max-width: calc($container-max-w + 24px);
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}

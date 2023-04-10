@@ -1,0 +1,27 @@
+@import '../../../styles/mixins.scss';
+
+.footer {
+  margin-top: 60px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-dark;
+  fill: dark;
+  border-top: 1px solid $color-grey20;
+
+  & * {
+    color: $color-dark;
+    fill: dark;
+  }
+
+  @include mqS() {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  @include mqXs() {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

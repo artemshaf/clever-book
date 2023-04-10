@@ -1,0 +1,45 @@
+@import '../../../../styles/mixins.scss';
+
+.info {
+  &__title {
+    font-weight: bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 20px;
+    margin: 18px 0;
+
+    @include mqM() {
+      grid-template-columns: 1fr;
+      column-gap: 10px;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 190px auto;
+
+      @include mqS() {
+        grid-template-columns: 1fr 2fr;
+      }
+
+      & span:first-child {
+        color: $color-grey40;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.divider {
+  max-width: 350px;
+}

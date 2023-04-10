@@ -1,0 +1,22 @@
+@import '../../../../styles/index.scss';
+
+.assestive {
+  margin: 8px 12px 0 12px;
+  line-height: 16px;
+  font-size: 12px;
+
+  & * {
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  &_error {
+    color: $color-negative;
+  }
+
+  color: $color-grey40;
+}
+
+.btn {
+  width: 100%;
+}

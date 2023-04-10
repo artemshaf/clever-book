@@ -1,0 +1,82 @@
+@import '../../../styles/mixins.scss';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    & > li > ul {
+      display: flex;
+      gap: 16px;
+      margin-left: 20px;
+
+      & > li {
+        display: flex;
+        column-gap: 8px;
+      }
+
+      & li:first-child {
+        margin-top: 20px;
+      }
+    }
+    color: $color-dark;
+  }
+
+  & span {
+    cursor: pointer;
+  }
+
+  & > ul > li {
+    & > p,
+    & > a > p {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+}
+
+.choosed {
+  border-bottom: 3px solid $color-accent;
+  font-weight: bold;
+
+  &__title {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 8px;
+    font-weight: bold;
+
+    &_active {
+      color: $color-accent;
+      border-bottom: 2px solid $color-accent;
+
+      * svg,
+      path {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  &__item {
+    color: $color-accent;
+    font-weight: bold;
+  }
+}
+
+.books-count {
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-grey40;
+}
+
+.title__button {
+  background: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-align-last: left;
+}

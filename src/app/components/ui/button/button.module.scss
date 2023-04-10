@@ -1,0 +1,118 @@
+@import '../../../styles/mixins.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline-color: #f8b600;
+  outline-width: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  transition: $transition-m all ease-in-out;
+  border-radius: 30px;
+  padding: 14px 32px;
+
+  & {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.primary {
+  color: $color-white;
+  background: linear-gradient(233.73deg, #f83600 -16.08%, #f9d423 327.37%);
+  border: none;
+
+  &:hover {
+    background-color: #ff740f;
+    & * {
+      fill: $color-white;
+      stroke: $color-white;
+      color: $color-white;
+    }
+  }
+  &:active {
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background: $color-grey20;
+  }
+}
+
+.secondary {
+  color: $color-dark;
+  background-color: $color-white;
+  border: 1px solid $color-grey20;
+
+  & svg,
+  path {
+    fill: $color-dark;
+  }
+
+  &:hover {
+    background-color: #ff740f;
+    color: $color-white;
+    border-color: transparent;
+
+    & * {
+      fill: $color-white;
+      color: $color-white;
+      stroke: $color-white;
+    }
+  }
+  &:active {
+    background-color: $bg-btn-pressed;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    color: $color-grey40;
+    background-color: $color-grey5;
+  }
+}
+
+.text {
+  color: $color-white;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: $color-dark;
+    color: $color-dark30;
+  }
+  &:active {
+    color: $btn-color-pressed;
+    color: $btn-color-pressed;
+  }
+  &:disabled {
+    color: $color-dark;
+    color: $color-dark;
+  }
+}
+
+.s {
+  padding: 11px 30px;
+  border-radius: $border-l;
+}
+
+.l {
+  padding: 14px 40px;
+  border-radius: $border-m;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: $transition-m all ease-in-out;
+
+  & * {
+    fill: white;
+    stroke: white;
+  }
+}

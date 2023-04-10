@@ -1,0 +1,101 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0;
+  margin: 30px 0;
+  & * {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.name {
+  margin-left: 120px;
+  margin-right: auto;
+
+  @include mqM() {
+    margin-left: 40px;
+    margin-right: none;
+  }
+
+  @include mqXs() {
+    margin-left: 20px;
+    margin-right: none;
+  }
+}
+
+.menu {
+  margin-bottom: 30px;
+
+  &__block {
+    position: relative;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow-y: auto;
+    max-height: 70vh;
+    max-width: 500px;
+    width: calc(100vw - 60px);
+    z-index: 100;
+    background-color: $color-white;
+    padding: 32px;
+    display: block;
+    gap: 40px;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+      0px 1px 5px rgba(191, 196, 201, 0.24);
+
+    @include mqS() {
+      padding: 32px 12px;
+    }
+
+    &_hide {
+      display: none;
+    }
+  }
+
+  &__icon {
+    border: none;
+    box-shadow: none;
+  }
+
+  &__navs {
+    margin-top: 30px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+}
+
+.account {
+  cursor: pointer;
+}
+
+.tooltip {
+  &__wrapper {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 8px;
+
+    & li {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
